@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The code in this repository is intended to accompany the tutorial originally published [here](https://www.colby.so/posts/toggling-view-layouts-with-kredis-and-rails).
 
-Things you may want to cover:
+This application is a demonstration of using Kredis with Rails to toggle between a list and a card view, with a little bit of Turbo Frames and Tailwind to tie it all together.
 
-* Ruby version
+To run this application locally, clone the repository and then:
+```
+bundle install
+rails db:create db:migrate
+bin/dev
+```
 
-* System dependencies
+Afer starting the server, head to `/players`.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Check the final implementation in the `final` branch of this repository. The `main` branch is intentionally left at the initial commit for those who wish to code along with the tutorial.

@@ -4,6 +4,7 @@ class PlayersController < ApplicationController
   # GET /players or /players.json
   def index
     @players = Player.all
+    current_user.preferences.update(view: params[:view]) if params[:view].present?
   end
 
   # GET /players/1 or /players/1.json
